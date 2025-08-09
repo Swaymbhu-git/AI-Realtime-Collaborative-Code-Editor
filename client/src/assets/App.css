@@ -135,6 +135,12 @@ footer a {
 .leaveBtn:hover {
     background-color: rgb(166, 241, 143)
 }
+.regBtn {
+    background-color:  #4aee88;
+}
+.regBtn:hover {
+    background-color: rgb(166, 241, 143);
+}
 .runBtn:hover {
     background-color: rgb(166, 241, 143)
 }

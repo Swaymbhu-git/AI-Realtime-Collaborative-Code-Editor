@@ -53,7 +53,7 @@ const Register = () => {
                         value={password}
                         required
                     />
-                    <button type="submit" className="btn joinBtn" style={{ width: '100%' }}>Register</button>
+                    <button type="submit" className="btn joinBtn regBtn" style={{ width: '100%' }}>Register</button>
                     <span className="createInfo">
                         Already have an account? &nbsp;
                         <Link to="/login" className="createNewBtn">Login</Link>
