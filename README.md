@@ -13,10 +13,12 @@
   <br>
   <details>
     <summary>Click to see a sneak peek of CodeSync! 👀</summary>
-    <img src="path/to/your/screenshot1.png" alt="CodeSync Screenshot 1" width="49%">
-    <img src="path/to/your/screenshot2.png" alt="CodeSync Screenshot 2" width="49%">
+    <img src="./assets/img/regPage.png" alt="CodeSync Screenshot 1" width="49%">
+    <img src="./assets/img/Dashboard.png" alt="CodeSync Screenshot 2" width="49%">
+    <img src="./assets/img/owner.png" alt="CodeSync Screenshot 3" width="49%">
+    <img src="./assets/img/owner1.png" alt="CodeSync Screenshot 4" width="49%">
+    <img src="./assets/img/participant.png" alt="CodeSync Screenshot 5" width="49%">
     <br>
-    *(Replace `path/to/your/screenshot1.png` and `path/to/your/screenshot2.png` with the actual paths to your screenshots!)*
   </details>
 </p>
 
