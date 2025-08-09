@@ -1,0 +1,274 @@
+/* --- GLOBAL & LOGIN PAGE STYLES --- */
+.homePageWrapper {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+}
+.formWrapper {
+    background-color: #282a36;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px;
+    max-width: 90%;
+}
+footer {
+    position: fixed;
+    bottom: 0;
+}
+footer a {
+    color: #4aee88;
+}
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+}
+.mainLabel {
+    margin: 0 0 20px 0;
+}
+.homePageLogo {
+    height: 80px;
+    margin-bottom: 30px;
+}
+.inputBox {
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-bottom: 14px;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    color: #282a36;
+    text-align: center;
+}
+.btn {
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.btn-secondary {
+    background-color: #ffffff;
+    color: #282a36;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.btn-secondary:hover {
+    background-color: #4aee88;
+}
+.btn-primary {
+    background-color: #4aee88;
+    color: #282a36;
+    width: 100%;
+}
+.btn-primary:hover {
+    background-color: #3acb6a;
+}
+.createInfo {
+    margin: 0 auto;
+    margin-top: 20px;
+}
+.createNewBtn {
+    color: #4aee88;
+    text-decoration: none;
+    border-bottom: 1px solid #4aee88;
+}
+.createNewBtn:hover {
+    color: #3acb6a;
+    border-color: #3acb6a;
+}
+
+/* --- EDITOR PAGE LAYOUT --- */
+.mainWrap {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    height: 100vh;
+}
+.mainContent {
+    display: grid;
+    grid-template-columns: 1fr 290px;
+}
+.editorWrap {
+    height: 100vh;
+}
+
+/* --- SIDEBAR STYLES --- */
+.aside {
+    background-color: #1c1e29;
+    padding: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.aside h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    flex-shrink: 0;
+}
+.logo {
+    border-bottom: 1px solid #424242;
+    padding-bottom: 10px;
+}
+.logoImage {
+    height: 60px;
+}
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 16px;
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.leaveBtn {
+    width: 100%;
+    margin-top: 0;
+    background-color: #4aee88;
+}
+.leaveBtn:hover {
+    background-color: rgb(166, 241, 143)
+}
+.runBtn:hover {
+    background-color: rgb(166, 241, 143)
+}
+.whiteBtn:hover {
+    background-color: rgb(163, 163, 163)
+}
+
+/* --- PARTICIPANT LIST STYLES --- */
+.clientsList {
+    flex: 1;
+    overflow-y: auto;
+    min-height: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+.client {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: #282a36;
+    padding: 8px 10px;
+    border-radius: 10px;
+}
+.userName {
+    margin-left: 10px;
+    flex-grow: 1;
+}
+.participant-label {
+    font-size: 80%;
+    color: white;
+    margin-left: 8px;
+    font-weight: normal;
+}
+.kickBtn {
+    background: transparent;
+    border: none;
+    color: #ff5555;
+    cursor: pointer;
+    font-size: 1.2rem;
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+}
+.kickBtn:hover {
+    opacity: 1;
+}
+
+/* --- INVITE FORM STYLES --- */
+.sidebar-section {
+    position: relative;
+    margin-top: 20px;
+}
+.input-group-container {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 500px;
+    padding: 5px;
+    padding-left: 10px;
+}
+.invite-input {
+    flex-grow: 1;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    font-weight: bold;
+    color: #282a36;
+}
+.invite-submit-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4aee88;
+    border: none;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    color: #282a36;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: background-color 0.2s ease-in-out;
+}
+.invite-submit-btn:hover {
+    background-color: #3acb6a;
+}
+
+/* --- EXECUTION PANEL STYLES --- */
+.executionPanel {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #1c1e29;
+    color: white;
+    gap: 1rem;
+    height: 100vh;
+    box-sizing: border-box;
+}
+.io-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    min-height: 0;
+}
+.io-container h3 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+.io-box {
+    width: 100%;
+    flex: 1;
+    background-color: #282a36;
+    color: white;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    box-sizing: border-box;
+    resize: none;
+}
+.output-box {
+    overflow-y: auto;
+    white-space: pre-wrap;
+    word-break: break-all;
+}
+.runBtn {
+    background-color: #50fa7b;
+    color: #282a36;
+    width: 100%;
+}
+.runBtn:disabled {
+    background-color: #666;
+    cursor: not-allowed;
+}
