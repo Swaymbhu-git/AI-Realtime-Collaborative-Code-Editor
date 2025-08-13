@@ -40,7 +40,6 @@ export const initializeSocket = (io) => {
                 socket.join(roomId);
                 userSocketMap[socket.id] = { userName: username, userId };
                 
-                // --- THIS BLOCK IS CHANGED ---
                 // If this is the first user joining this room, set the C++ boilerplate.
                 if (codeForRoom[roomId] === undefined) {
                     codeForRoom[roomId] = `#include<bits/stdc++.h>
@@ -52,8 +51,6 @@ int main()
     return 0;
 }`;
                 }
-                // --- END OF CHANGE ---
-
                 socket.emit(ACTIONS.CODE_CHANGE, { code: codeForRoom[roomId] });
                 
                 const clients = getAllClients(io, roomId);

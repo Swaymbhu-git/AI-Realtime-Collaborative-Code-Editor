@@ -41,16 +41,6 @@ export const inviteUser = async (req, res) => {
         if (!room) {
             return res.status(404).json({ message: 'Room not found.' });
         }
-        
-        // --- START OF DEBUG LOGS ---
-        console.log('--- Ownership Check ---');
-        console.log('Room Owner ID from DB:', room.owner);
-        console.log('Type of DB Owner ID:', typeof room.owner);
-        console.log('Requesting User ID from Token:', ownerId);
-        console.log('Type of Token User ID:', typeof ownerId);
-        console.log('Do they match?', room.owner.equals(ownerId));
-        console.log('-----------------------');
-        // --- END OF DEBUG LOGS ---
 
         if (!room.owner.equals(ownerId)) {
             return res.status(403).json({ message: 'Only the room owner can invite users.' });

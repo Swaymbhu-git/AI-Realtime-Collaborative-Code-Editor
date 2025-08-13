@@ -45,8 +45,6 @@ export const login = async (req, res) => {
             return res.status(400).json({ message: 'Invalid credentials.' });
         }
 
-        // --- THIS IS THE FIX ---
-        // We now explicitly use user._id.toString() to ensure we get the correct ID.
         const payload = { user: { id: user._id.toString(), username: user.username } };
 
         jwt.sign(payload, process.env.JWT_SECRET, { expiresIn: '1d' }, (err, token) => {
