@@ -1,4 +1,4 @@
-<img src="./client/public/logo1.svg" alt="Description" width="100">
+<img src="./client/public/logo1.svg" alt="Description" width="1000">
 
 
 # 🚀✨ SlateAssist: AI-Assisted Collaborative Code Editor 🧠💻
