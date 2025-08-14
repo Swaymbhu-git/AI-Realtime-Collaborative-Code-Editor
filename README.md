@@ -1,4 +1,5 @@
-![Logo](./client/public/logo.svg)
+<img src="./client/public/logo1.svg" alt="Description" width="100">
+
 
 # 🚀✨ SlateAssist: AI-Assisted Collaborative Code Editor 🧠💻
 
