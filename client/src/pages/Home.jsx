@@ -8,7 +8,7 @@ const Home = () => {
             <div className="formWrapper">
                 <img
                     className="homePageLogo"
-                    src="/logo.png"
+                    src="/logo.svg"
                     alt="logoOfCodeEditor"
                 />
                 <h4 className="mainLabel" style={{ textAlign: 'center' }}>

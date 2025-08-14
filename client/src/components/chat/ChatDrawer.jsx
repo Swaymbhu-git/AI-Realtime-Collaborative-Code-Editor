@@ -71,10 +71,10 @@ const ChatDrawer = ({ isOpen, onClose, editorCode, executionInput, executionOutp
                     type="text"
                     value={userInput}
                     onChange={(e) => setUserInput(e.target.value)}
-                    placeholder="e.g., Explain this function..."
+                    placeholder="ex- Explain the main function."
                     disabled={isLoading}
                 />
-                <button type="submit" disabled={isLoading}>Send</button>
+                <button type="submit" disabled={isLoading}>→</button>
             </form>
         </div>
     );

@@ -17,7 +17,7 @@ const Sidebar = ({
             {/* --- TOP SECTION (Static) --- */}
             <div>
                 <div className="logo">
-                    <img className="logoImage" src="/logo.png" alt="logo" />
+                    <img className="logoImage" src="/logo1.svg" alt="logo" />
                 </div>
                 {isOwner && (
                     <div className="sidebar-section">

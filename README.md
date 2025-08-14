@@ -1,8 +1,10 @@
-# 🚀✨ CodeSync: AI-Assisted Collaborative Code Editor 🧠💻
+![Logo](./client/public/logo.svg)
 
-**CodeSync** is a cutting-edge, real-time collaborative code editor built with a powerful MERN stack and the magic of Socket.IO. 🧙‍♂️ Designed to supercharge your technical interviews and pair programming sessions, it enables multiple authenticated users to write ✍️, edit ✏️, and execute C++ code together in a synchronized environment, all while benefiting from an integrated AI assistant 🤖.
+# 🚀✨ SlateAssist: AI-Assisted Collaborative Code Editor 🧠💻
 
-🔗 **Live Demo:** **<ins>[codesync-live-demo.vercel.app](https://ai-realtime-collaborative-code-edit.vercel.app/)</ins>** 🌐
+**SlateAssist** is a cutting-edge, real-time collaborative code editor built with a powerful MERN stack and the magic of Socket.IO. 🧙‍♂️ Designed to supercharge your technical interviews and pair programming sessions, it enables multiple authenticated users to write ✍️, edit ✏️, and execute C++ code together in a synchronized environment, all while benefiting from an integrated AI assistant 🤖.
+
+🔗 **Live Demo:** **<ins>[slateassist-live-demo.vercel.app](https://ai-realtime-collaborative-code-edit.vercel.app/)</ins>** 🌐
 
 > ⚠️ **Heads Up!** The backend server, hosted on a free Render instance ☁️, might take a brief nap 😴 after inactivity. Allow up to 60 seconds for it to awaken on your first visit. Once it's up and running 🟢, prepare for a smooth and responsive experience!
 
@@ -12,12 +14,13 @@
   📸 <ins>**Showcase Your Awesome!**</ins> 📸
   <br>
   <details>
-    <summary>Click to see a sneak peek of CodeSync! 👀</summary>
-    <img src="./client/src/assets/img/regPage.png" alt="CodeSync Screenshot 1" width="49%">
-    <img src="./client/src/assets/img/Dashboard.png" alt="CodeSync Screenshot 2" width="49%">
-    <img src="./client/src/assets/img/owner.png" alt="CodeSync Screenshot 3" width="49%">
-    <img src="./client/src/assets/img/owner1.png" alt="CodeSync Screenshot 4" width="49%">
-    <img src="./client/src/assets/img/participant.png" alt="CodeSync Screenshot 5" width="49%">
+    <summary>Click to see a sneak peek of SlateAssist! 👀</summary>
+    <img src="./client/src/assets/img/regPage.png" alt="SlateAssist Screenshot 1" width="49%">
+    <img src="./client/src/assets/img/Dashboard.png" alt="SlateAssist Screenshot 2" width="49%">
+    <img src="./client/src/assets/img/owner_run.png" alt="SlateAssist Screenshot 3" width="49%">
+    <img src="./client/src/assets/img/owner_ai.png" alt="SlateAssist Screenshot 4" width="49%">
+    <img src="./client/src/assets/img/ps_run.png" alt="SlateAssist Screenshot 3" width="49%">
+    <img src="./client/src/assets/img/ps_ai.png" alt="SlateAssist Screenshot 4" width="49%">
     <br>
   </details>
 </p>
@@ -26,7 +29,7 @@
 
 ## ✨ Core Features - Dive Deeper! 🌊
 
-CodeSync isn't just about typing together; it's a comprehensive platform engineered for seamless and intelligent collaboration.
+SlateAssist isn't just about typing together; it's a comprehensive platform engineered for seamless and intelligent collaboration.
 
 #### 1. ⚡ Real-time Collaboration Layer 🤝
 * **💨 Instant Code Synchronization:** Leveraging the speed of WebSockets via Socket.IO 📡, every code change you make is instantly broadcasted to all collaborators in the room. Our server acts as the ultimate conductor 🎼, ensuring that newcomers are immediately in harmony with the latest code.
@@ -50,7 +53,7 @@ CodeSync isn't just about typing together; it's a comprehensive platform enginee
 #### 5. 🛡️ Advanced Session & Room Management - Control & Stability! ⚙️
 * **👑 Owner's Privileges:** The creator of a coding room wears the crown 👑! As the "owner," they have the exclusive power to invite new collaborators ✉️ and, if necessary, remove participants 🚪. This control is strictly enforced on the server.
 * **🔄 "Silent Swap" for Seamless Sessions:** No more disruptive "user left" and "user joined" spam when you switch tabs! Our intelligent "Silent Swap" system ensures that if you rejoin a room from a different tab or device, your old session is seamlessly replaced 🔄 without anyone else even noticing. It's like magic! ✨
-* **🚪 Cross-Tab Logout Synchronization:** Security and convenience go hand-in-hand! If you log out from CodeSync in one browser tab, all your other open CodeSync tabs will automatically log you out too 🚪, ensuring your session is fully closed everywhere.
+* **🚪 Cross-Tab Logout Synchronization:** Security and convenience go hand-in-hand! If you log out from SlateAssist in one browser tab, all your other open SlateAssist tabs will automatically log you out too 🚪, ensuring your session is fully closed everywhere.
 
 #### 6. ✨ Polished User Interface - Coding in Style! 🎨
 * **🏷️ Clear Role Identification:** Wondering who's in charge? The participant list clearly marks the **`(Owner)`** 👑 and highlights **`(You)`** 🙋, so everyone knows their role at a glance.
@@ -61,22 +64,22 @@ CodeSync isn't just about typing together; it's a comprehensive platform enginee
 
 ## 🛠️ Technology & Architecture - Under the Hood! ⚙️
 
-CodeSync is built with a modern, decoupled architecture, designed for performance, scalability, and maintainability.
+SlateAssist is built with a modern, decoupled architecture, designed for performance, scalability, and maintainability.
 
 * **Frontend (Vite + React):** A blazing-fast 🔥 single-page application built with the latest React features, bundled by Vite 🚀. We use React Hooks and the Context API for efficient state management and React Router DOM for smooth navigation between pages. Real-time interactions are powered by the efficient Socket.IO Client 🔌.
 * **Backend (Node.js + Express):** A robust and scalable backend built on Node.js with the Express.js framework 🏗️. It handles all API requests, manages WebSocket connections, enforces authentication, and acts as a secure intermediary for communicating with third-party AI and code execution services.
 * **Database (MongoDB):** We use MongoDB 🍃, a flexible NoSQL database, managed with the Mongoose ODM (Object Data Modeling) library, to store user data and room information efficiently.
-* **Real-time Communication (Socket.IO):** The heart ❤️ of CodeSync's collaborative features! Socket.IO provides a persistent, low-latency WebSocket connection 🔗 for seamless, bi-directional communication between the frontend and backend.
+* **Real-time Communication (Socket.IO):** The heart ❤️ of SlateAssist's collaborative features! Socket.IO provides a persistent, low-latency WebSocket connection 🔗 for seamless, bi-directional communication between the frontend and backend.
 
 ---
 
 ## 🔧 Getting Started Locally - Your Local Coding Lab! 🧪
 
-Ready to run CodeSync on your own machine? Follow these simple steps!
+Ready to run SlateAssist on your own machine? Follow these simple steps!
 
 1.  **Clone the repository:**
-    git clone [https://github.com/your-username/CodeSync.git](https://github.com/your-username/CodeSync.git)
-    cd CodeSync
+    git clone [https://github.com/Swaymbhu-git/SlateAssist.git](https://github.com/your-username/SlateAssist.git)
+    cd SlateAssist
 
 2.  **Setup the Backend:**
     * Navigate to the server directory: `cd server`
@@ -101,7 +104,7 @@ Ready to run CodeSync on your own machine? Follow these simple steps!
 
 ---
 
-## ☁️ Deployment - Taking CodeSync to the World! 🚀
+## ☁️ Deployment - Taking SlateAssist to the World! 🚀
 
 * **Frontend:** Deployed with the speed and simplicity of **<ins>[Vercel](https://vercel.com/)</ins>**.
 * **Backend:** Running smoothly on the reliable infrastructure of **<ins>[Render](https://render.com/)</ins>**.
@@ -118,4 +121,4 @@ Ready to run CodeSync on your own machine? Follow these simple steps!
 
 ## 📜 License - Open Source Love! ❤️
 
-This project is proudly licensed under the MIT License. Feel free to use and contribute to CodeSync!
+This project is proudly licensed under the MIT License. Feel free to use and contribute to SlateAssist!

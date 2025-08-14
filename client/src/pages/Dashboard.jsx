@@ -36,7 +36,7 @@ const Dashboard = () => {
     return (
         <div className="homePageWrapper">
             <div className="formWrapper">
-                <img className="homePageLogo" src="/logo.png" alt="logo" />
+                <img className="homePageLogo" src="/logo.svg" alt="logo" />
                 <h4 className="mainLabel">Create or Join a Room</h4>
                 <div className="inputGroup">
                     <button onClick={handleCreateNewRoom} className="btn btn-secondary">

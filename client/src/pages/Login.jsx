@@ -25,7 +25,7 @@ const Login = () => {
     return (
         <div className="homePageWrapper">
             <div className="formWrapper">
-                <img className="homePageLogo" src="/logo.png" alt="logo" />
+                <img className="homePageLogo" src="/logo.svg" alt="logo" />
                 <h4 className="mainLabel">Login to Your Account</h4>
                 <form onSubmit={handleLogin} className="inputGroup">
                     <input
